@@ -40,63 +40,75 @@ filetype indent on
 let g:tex_flavor='latex'
 
 "用于语法高亮的配色方案
-"colorscheme elisex
+colorscheme elflord
 "
 ""支持256色彩
 set t_Co=256
 
 "禁止光标闪烁
-"set gcr=a:block-blinkon0
-"
-""设置gvi 显示字体
-set guifont=Dejavu\Sans\Mono\12
+set gcr=a:block-blinkon0
 
 "开启语法高亮
-"syntax enable
+syntax enable
 ""允许用指定高亮配色替换默认方案
 syntax on
 
 "设置制表符占用空格数
-"set tabstop=4
-"set shiftwidth=4
-"set noexpandtab
-"
+set tabstop=4
+set shiftwidth=4
+set noexpandtab
+
 ""开启行号显示
 set number
 
 "开启高亮显示结果
-"set hlsearch
-"
+set hlsearch
+
 ""开启实时搜索功能
 set incsearch
 
 "搜索时大小写不敏感
-"set ignorecase
-"
+set ignorecase
+
 ""在命令行显示当前输入的命令
 set showcmd
 
+"去掉工具栏和滑动条
+set go=aAce
+
+"开启自带的tab
+set showtabline=2
+
+"设置默认字体为monaco
+set guifont=Monaco:h13
+
+"设置宽
+set columns=150
+
+"设置长
+set lines=35
+
 ""禁止兼容模式
-set guioptions-=l
-set guioptions-=L
-set guioptions-=r
-set guioptions-=R
+"set guioptions-=l
+"set guioptions-=L
+"set guioptions-=r
+"set guioptions-=R
 
 "定义快捷键前缀,即<Leader>
-"let mapleader=";"
+let mapleader=";"
 "
 ""定义行首行尾快捷键
 nmap lh 0
 nmap le $
 
 "定义快捷键关闭当前窗口
-"nmap <Leader>q :q<CR>
+nmap <Leader>q :q<CR>
 "
 ""定义快捷键保存当前窗口
 nmap <Leader>w :w<CR>
 
 "设置快捷键将选中文本块复制到系统剪贴板
-"vnoremap <Leader>y "+y
+vnoremap <Leader>y "+y
 "
 ""设置                  粘贴到vim
 nmap <Leader>p "+p
